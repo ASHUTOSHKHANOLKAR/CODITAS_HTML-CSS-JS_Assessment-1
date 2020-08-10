@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Assignment-LOGIN</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./CSS/login_style.css">
+</head>
+<body>
+ <!-- --------------------------------Display Container--------------------------------------->   
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <!-- --------------------------------Main content and form--------------------------------------->
+            <div class="formBox">
+                <h2><span class="heading">We are </span>NUVA</h2>
+                <p>Welcome back..! Log in to your<br> account to view todays <br>clients :</p><br>
+                <form onsubmit="event.preventDefault()" >
+                    <div class="form-content">
+
+                        <i class="icon fas fa-envelope fa-2x"></i>
+                        <div class="group">
+                            <label for="email">Email:</label>
+                            <input class="inpField click" type="email" name="email" id="email" required>
+                            
+                        </div>
+    
+                        <i class="icon fas fa-unlock-alt fa-2x"></i>
+                        <div class="group">
+                            <label for="password">Password:</label>
+                            <input class="inpField click" minlength="8" type="password" name="password" id="password" required>
+                            
+                        </div>
+    
+                    </div>
+
+                    <span id="message" class="error"></span>
+                
+                    <input class="btn login" id="loginBtn" type="submit" name="" value="Login">
+                    <div class="ca">
+                        Don't Have an Account...?
+                        <a href ="./signup.html" target="_blank">Create One</a>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------scripts--------------------------------------->
+<script src="./scripts/login.js"></script>
+</body>
+</html>

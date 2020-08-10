@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Assignment-LOGIN</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./CSS/signup_style.css">
+<body>
+     <!-- --------------------------------Display Container--------------------------------------->   
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <!-- --------------------------------Main content and form--------------------------------------->
+            <div class="formBox">
+                <h2><span class="heading">We are </span>NUVA</h2>
+                <p>Fill the following information :</p><br>
+                <form onsubmit="event.preventDefault()" >
+                    <div class="form-content">
+
+                        <i class="icon fas fa-envelope fa-2x"></i>
+                        <div class="group">
+                            <label for="email">Email:</label>
+                            <input class="inpField click" type="email" name="email" id="email" placeholder="Enter your Email" required>
+                            
+                        </div>
+    
+                        <i class="icon fas fa-unlock-alt fa-2x"></i>
+                        <div class="group">
+                            <label for="password">Password:</label>
+                            <input class="inpField click" minlength="8" type="password" name="password" id="password" placeholder="*****" required>
+                          
+                        </div>
+
+                        <i class="icon far fa-calendar-alt fa-2x"></i>
+                        <div class="group">
+                            <label for="dob">Date of Birth:</label>
+                            <input class="inpField click" type="Date" name="dob" id="dob"  required />
+                        </div>
+                        
+                        <i class="icon fas fa-users-cog fa-2x"></i>
+                        <div class="group">
+                            <label for="position">Role in Organization :</label>
+                            <select class="inpField click" name="position" id="role" required>
+                                <option value="">Select your Role:</option>
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+                                <option value="employee">Employee</option>
+                            </select>
+                        </div>
+    
+                    </div>
+                    <span class="error" id="message"></span>
+                
+                    <input class="btn signup" id="signupBtn" type="submit" name="" value="Create Account">
+
+                </form>
+                
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------scripts--------------------------------------->
+<script src="./scripts/signup.js"></script>
+</body>
+</html>
